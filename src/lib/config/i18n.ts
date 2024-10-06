@@ -1,10 +1,12 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import en from "../../assets/locales/en/common.json";
+/* eslint-disable import/no-named-as-default-member */
+import i18n from "i18next"
+import { initReactI18next } from "react-i18next"
+
+import en from "../../assets/locales/en/common.json"
 
 const resources = {
-    'en': { translation: en} 
-};
+  "en": { translation: en }
+}
 
 const initI18n = async () => {
 
@@ -14,11 +16,11 @@ const initI18n = async () => {
     lng: "en",
     fallbackLng: "en",
     interpolation: {
-      escapeValue: false,
-    },
-  });
-};
+      escapeValue: false
+    }
+  })
+}
 
-initI18n();
+initI18n()
 
-export default i18n;
+export default i18n
