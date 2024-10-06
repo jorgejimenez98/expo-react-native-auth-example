@@ -13,3 +13,7 @@
    ```bash
     npm run start
    ```
+
+
+### Notes
+  * Run ``npm run sort``` to sort all json files
