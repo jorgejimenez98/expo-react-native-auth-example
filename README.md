@@ -5,15 +5,15 @@
 1. Install dependencies
 
    ```bash
-   npm install
+   pnpm install
    ```
 
 2. Start the app
 
    ```bash
-    npm run start
+    pnpm start
    ```
 
 
 ### Notes
-  * Run ``npm run sort``` to sort all json files
+  * Run ``pnpm sort``` to sort all json files
