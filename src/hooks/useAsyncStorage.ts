@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react"
 
 import AsyncStorage from "@react-native-async-storage/async-storage"
 
-export function useAsyncStorage<T>(key: string, initialValue: T) {
+export function useAsyncStorage<T>(key: string, initialValue?: T) {
   const [storedValue, setStoredValue] = useState<T | null>(null)
 
   // Get value from AsyncStorage
