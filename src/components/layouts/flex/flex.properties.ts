@@ -6,7 +6,7 @@ export interface FlexProps {
   items?: "start" | "center" | "end" | "stretch"
   wrap?: "nowrap" | "wrap" | "wrap-reverse"
   gap?: "sm" | "md" | "lg" | "none"
-  className?: string
+  class?: string
   children: React.ReactNode
   style?: StyleProp<ViewStyle> | undefined
 }

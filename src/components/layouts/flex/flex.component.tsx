@@ -7,22 +7,14 @@ import { flexVariants } from "./flex.variants"
 
 import { cn } from "@/lib/config"
 
-export function Flex({
-  dir,
-  justify,
-  items,
-  wrap,
-  gap,
-  className,
-  children,
-  style
-}: FlexProps) {
+export function Flex(props: FlexProps) {
+  const { class: htmlClass, children, style, ...restProps } = props
 
   return (
     <View
       className={cn(
-        flexVariants({ dir, justify, items, gap, wrap }),
-        className
+        flexVariants({ ...restProps }),
+        htmlClass
       )}
       style={style}
     >
