@@ -7,8 +7,11 @@ export interface User {
 }
 
 export interface AuthState {
+  session: string | null;
+  isLoading: boolean;
   user: User | null;
-  token: string | null;
-  setUser: (user: User, token: string) => void;
+
+  login: (sessionToken: string) => void;
   logout: () => void;
+  restoreSession: () => void;
 }

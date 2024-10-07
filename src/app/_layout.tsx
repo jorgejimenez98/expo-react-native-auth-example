@@ -1,23 +1,13 @@
-import { Stack } from "expo-router"
+import { Slot } from "expo-router"
 
 import "@/lib/config/i18n"
-import { useAuthGuard } from "@/hooks"
-import { screens } from "@/navigation"
+import { SessionProvider } from "@/providers/session-provider"
 
 export default function RootLayout() {
 
-  // Guard
-  useAuthGuard()
-
   return (
-    <Stack>
-      {/* Screens */}
-      {screens.map((screen, idx) => (
-        <Stack.Screen
-          key={idx}
-          {...screen}
-        />
-      ))}
-    </Stack>
+    <SessionProvider>
+      <Slot />
+    </SessionProvider>
   )
 }
