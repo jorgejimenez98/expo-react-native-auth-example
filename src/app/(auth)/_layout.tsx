@@ -13,7 +13,13 @@ export default function AuthLayout() {
       {/* Login */}
       <Stack.Screen
         name={"login"}
-        options={{ title: "Login", headerShown: false }}
+        options={{ headerShown: false }}
+      />
+
+      {/* Register */}
+      <Stack.Screen
+        name={"sign-up"}
+        options={{ headerShown: false }}
       />
     </Stack>
   )

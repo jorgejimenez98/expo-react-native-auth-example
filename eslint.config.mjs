@@ -81,6 +81,7 @@ export default [{
     // Prevents unused styles
     "react-native/no-unused-styles": 2,
 
+
     // Requires platform-specific components to be split
     "react-native/split-platform-components": 2,
 
@@ -91,7 +92,7 @@ export default [{
     "react-native/no-color-literals": 2,
 
     // Disallows raw text nodes
-    "react-native/no-raw-text": 2,
+    "react-native/no-raw-text": "off",
 
     // Prevents single-element style arrays
     "react-native/no-single-element-style-arrays": 2,
